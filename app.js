@@ -58,7 +58,12 @@ let indice = Math.floor(Math.random() * amigos.length);
 let amigoSorteado = amigos[indice];
 
 // Mostrar al amigo sorteado
-alert('El amigo seleccionado es: ' + amigoSorteado);
+let resultadoGanador = document.getElementById('resultado');
+resultadoGanador.innerHTML = '';
+
+let li = document.createElement('li');
+li.textContent = amigoSorteado;
+resultadoGanador.appendChild(li);
 
     }   
 
